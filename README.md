@@ -36,4 +36,12 @@ The project utilizes the **Chronic Kidney Disease Dataset**, focusing on these p
 3. Launch App: `streamlit run app.py`
 
 ### **Results / Output**
-The model provides a binary classification output based on the input clinical vitals. The final application is hosted on Streamlit Cloud for easy accessibility.
+- **Model Performance**: The Logistic Regression model achieved a high accuracy during testing.
+- **Web Interface**: A fully functional frontend was developed using Streamlit.
+- **Deployment**: The project is live and accessible via the link below.
+
+<img width="1074" height="734" alt="Screenshot 2026-01-04 at 2 11 23 PM" src="https://github.com/user-attachments/assets/ffc125c3-0744-4835-b1af-184e55a5def0" />
+
+<img width="1074" height="734" alt="Screenshot 2026-01-04 at 2 10 56 PM" src="https://github.com/user-attachments/assets/397e2be2-a0a1-460f-ba91-cd40273e67c4" />
+
+**Live Link**: [https://ckd-prediction-ai.streamlit.app/](https://ckd-prediction-ai.streamlit.app/)
