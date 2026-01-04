@@ -11,7 +11,7 @@ with st.sidebar:
     st.write("**Algorithm:** Logistic Regression")
     
 
-st.title("Chronic Kidney Disease Prediction 🩺")
+st.title("Chronic Kidney Disease Prediction ")
 st.markdown("##### AI-powered screening tool for early detection of kidney risk.")
 st.divider()
 
