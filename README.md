@@ -1,24 +1,39 @@
-# Chronic Kidney Disease Prediction
+# Chronic Kidney Disease Prediction using Logistic Regression
 
 ### **Project Title**
-Chronic Kidney Disease (CKD) Risk Assessment System using Logistic Regression
+Chronic Kidney Disease Prediction
 
 ### **Problem Statement**
-Kidney disease often goes undetected until late stages. This tool provides an early screening method using laboratory metrics.
+CKD is a critical health condition that often remains asymptomatic until the advanced stages. A machine learning-based approach to screen patients based on common lab metrics can help in early identification and management of the disease.
 
 ### **Objective**
-To build a reliable classification model that helps identify patients at risk of CKD based on clinical data.
+To build a reliable diagnostic tool using **Logistic Regression** that classifies patients into "CKD" or "Not-CKD" categories based on clinical features like Creatinine levels, Hemoglobin, and Specific Gravity.
 
 ### **Dataset Description**
-The model uses features like Age, BP, Specific Gravity, Albumin, Glucose, Creatinine, and Hemoglobin.
+The project utilizes the **Chronic Kidney Disease Dataset**, focusing on these primary metrics:
+* **Age** 
+* **Blood Pressure (bp)**: Diastolic blood pressure
+* **Specific Gravity (sg)**: Indicator of urine concentration.
+* **Albumin (al)**: Protein levels indicating kidney filtration damage.
+* **Blood Glucose Random (bgr)**
+* **Serum Creatinine (sc)**: Critical waste product filtered by kidneys.
+* **Hemoglobin (hemo)**: Low levels are common in CKD patients.
 
 ### **Methodology / Approach**
-- Data cleaning and mean imputation for missing values.
-- Implementation of **Logistic Regression** for binary classification.
-- Frontend development using **Streamlit**.
+1. **Data Preprocessing**: Cleaned the dataset and handled missing values using mean imputation.
+2. **Algorithm**: Implemented **Logistic Regression**, which uses the Sigmoid function for binary classification.
+3. **Evaluation**: Evaluated the model on a 20% test split to ensure accuracy.
+4. **Deployment**: Developed a web interface using **Streamlit** for real-time user interaction.
 
 ### **Tools & Technologies Used**
-- Python, Scikit-Learn, Pandas, NumPy, Streamlit
+* **Language**: Python
+* **Libraries**: Pandas, Scikit-Learn, NumPy, Streamlit
+* **Deployment**: GitHub / Streamlit Cloud
+
+### **Steps to Run the Project**
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run training: `python train_ckd.py`
+3. Launch App: `streamlit run app.py`
 
 ### **Results / Output**
-The application generates a 'High Risk' or 'Low Risk' result based on input parameters.
+The model provides a binary classification output based on the input clinical vitals. The final application is hosted on Streamlit Cloud for easy accessibility.
