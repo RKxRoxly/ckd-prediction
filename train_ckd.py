@@ -3,12 +3,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import pickle
 
-
 df = pd.read_csv('kidney_disease.csv')
 
-
 df['classification'] = df['classification'].str.strip()
-
 
 features = ['age', 'bp', 'sg', 'al', 'bgr', 'sc', 'hemo']
 
@@ -16,7 +13,6 @@ df_clean = df.dropna(subset=features + ['classification'])
 
 X = df_clean[features]
 y = df_clean['classification'].map({'ckd': 1, 'notckd': 0})
-
 
 print(f"X rows: {len(X)}, y rows: {len(y)}")
 
